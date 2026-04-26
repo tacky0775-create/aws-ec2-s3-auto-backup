@@ -1,12 +1,15 @@
-# aws-ec2-s3-auto-backup
 # AWS EC2 S3 Auto Backup
 
-EC2上のログをS3へ自動バックアップするツール
+## 概要
+EC2上のログファイルをS3へ自動バックアップするツール。
 
-## 使用サービス
+## 使用技術
+- Amazon VPC
 - Amazon EC2
 - Amazon S3
-- Amazon VPC
+- IAMロール
+- Linux cron
+- AWS CLI
 
 ## 構成
 
@@ -17,4 +20,4 @@ backup.sh
 S3
 
 ## 自動化
-cronで毎日バックアップ
+cronにより毎日02:00にバックアップを実行
